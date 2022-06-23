@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.encabezado p {
+    background-color: #1CD1B0;
+    color: #333333;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 2px 10px;
+}
+
+.encabezado section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #00669F;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.encabezado nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #001D2D;
+}
+
+.encabezado nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.encabezado nav ul li {
+    margin: 5px 20px; 
+}
+
+.encabezado nav ul li a{
+    text-decoration: none;
+    color: #ffffff
+}
+
+main {
+    background-color: #E5E5E5;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mas {
+    border: none;
+    background-color: #00669F;
+    border-radius: 50%;
+    color: #ffffff;
+    padding: 4px 16px;
+    font-size: 48px;
+    cursor: pointer;
+    position: fixed;
+    right: 5px;
+    top: 400px;
+}
+
+.mas:hover {
+    background-color: #001D2D;
+}
+
+.perfil {
+    background-color: #F3F3F3;
+    width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.perfil .arriba {
+    border-radius: 16px 16px 0 0;
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+
+}
+
+.perfil .bm {
+    background-image: url(../img/fondoBatman.png);
+}
+
+.perfil .mm {
+    background-image: url(../img/fondoMujerMaravilla.png);
+}
+
+.perfil .sm {
+    background-image: url(../img/fondoSuperman.png);
+}
+
+.perfil .hq {
+    background-image: url(../img/fondoHarleyQuinn.png);
+}
+
+.perfil .arriba i {
+    color: #CC2424;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    cursor: pointer;            
+}
+
+.perfil .arriba i:hover {
+    font-size: 1.7rem;
+}
+
+.perfil img {
+    position: absolute;
+    width: 100px;
+    border-radius: 50%;
+    top: 150px;
+}
+
+.perfil h3 {
+    margin-top: 60px;
+    font-size: 1.3rem;
+}
+
+.perfil p {
+    margin: 10px 15px;
+    height: 190px;
+    text-align: left;
+}
+
+.perfil a {
+    background-color: #00669F;
+    color: #ffffff;
+    margin: 25px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.pie {
+    background-color: #00669F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+    min-height: 60px;
+}
+
+.pie a {
+    position: absolute;
+    right: 15px;
+}
+
+.pie a img {
+    width: 100px;
+}
+
+/*------FORM------*/
+
+.main-form {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.container-form {
+    background-color: #00669F;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 49.0901px;
+    margin: 50px;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid black;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60vw;
+}
+
+.container-form h2 {
+    color: #ffffff;
+    margin: 10px;
+    font-weight: 900;
+    font-size: 2rem;
+    border: 3px solid green;
+}
+
+.container-form legend {
+    color: #ffffff;
+    font-weight: 200;
+    text-align: center;
+}
+
+.container-form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.izq label, .der p {
+    color: #ffffff;
+    font-weight: 200;
+    margin: 15px 0;
+}
+
+.izq {
+    margin-right: 20px;
+}
+
+.izq input {
+    padding: 15px 5px;
+    width: 250px;
+    background-color: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;   
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.izq textarea {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px; 
+    padding: 15px 5px;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 50px;
+    max-height: 255px;
+    margin-top: 30px;
+} 
+
+.der {
+    margin-left: 20px;
+}
+
+.der label {
+    margin: 5px;
+}
+
+.der select {
+    padding: 15px 5px;
+    width: 250px;
+    background-color: #FFFFFF;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15.3407px;  
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.der label:first-child {
+    color: #ffffff;
+    font-weight: 200;
+    margin: 15px 0;
+}
+
+.der label:nth-child(3) {
+    color: #ffffff;
+    font-weight: 200;
+    margin: 15px 0 30px;
+}
+
+.der p {
+    margin-top: 35px;
+} 
+
+.der input, .der label {
+    color: #ffffff;
+    font-weight: 200;
+}
+
+.der hr {
+    margin: 10px 0;
+}
+
+.der .tipos {
+    margin-top: 0;
+}
+
+.abajo {
+    width: 90%;
+    text-align: center;
+    margin: 20px;
+}
+
+.abajo button {
+    padding: 10px 120px;
+    border: none;
+    background-color: #1CD1B0;
+    border-radius: 23.011px;
+    cursor: pointer;
+    color: #000000;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.abajo button:hover {
+    background-color: #001D2D;
+    color: #FFFFFF;
+}
+
+
+
+@media (max-width:598px){
+
+    .pie {
+        flex-direction: column-reverse;
+    }
+
+    .pie a {
+        position: static;
+        margin: 10px;
+    }
+    
+}
